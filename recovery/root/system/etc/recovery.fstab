@@ -32,11 +32,6 @@ vendor                         /vendor         ext4        ro,barrier=1,discard 
 product                        /product        ext4        ro,barrier=1,discard      avb,logical,first_stage_mount
 odm                            /odm            ext4        ro,barrier=1,discard      avb,logical,first_stage_mount
 
-/dev/block/mapper/vendor       /vendor_image   emmc        flags=backup=0\;flashimg=1\;display=\"Vendor-Image\"";
-/dev/block/mapper/system       /system_image   emmc        flags=backup=0\;flashimg=1\;display=\"System-Image\"";
-/dev/block/mapper/product      /product_image  emmc        flags=backup=0\;flashimg=1\;display=\"Product-Image\"";
-/dev/block/mapper/odm	       /odm_image      emmc        flags=backup=0\;flashimg=1\;display=\"Odm-Image\"";
-
 /dev/block/by-name/metadata    /metadata       ext4        defaults                  wait,first_stage_mount
 /dev/block/by-name/userdata    /data           f2fs        noatime,nosuid,nodev,discard,usrquota,grpquota,fsync_mode=nobarrier,reserve_root=32768,resgid=5678	recoveryonly,length=-20480
 
