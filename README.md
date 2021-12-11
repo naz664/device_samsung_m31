@@ -9,7 +9,7 @@ git clone https://github.com/naz664/device_samsung_m31.git device/samsung/m31
 ```
 3. To build:
 ```
-export ALLOW_MISSING_DEPENDENCIES=true && . build/envsetup.sh && lunch omni_m31-eng && mka recoveryimage -j$(nproc)
+export ALLOW_MISSING_DEPENDENCIES=true && . build/envsetup.sh && lunch omni_m31-eng && mka recoveryimage -j$(nproc --all)
 ```
 
 
